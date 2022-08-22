@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>NV SAJITH : WEB DESIGNER & DEVELOPER</title>
+  <link rel="icon" href="img/icon.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="dietician" content="Dt. Soumya Nv : Dietitian/Nutritionist in Mangalore">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      font-family: 'Times New Roman', Times, serif;
+      color: #fff;
+    }
+
+    p {
+      font-size: large;
+    }
+
+    .w3-row-padding img {
+      margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+      width: 120px;
+      background: rgb(15, 12, 12);
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+      margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+      #main {
+        margin-left: 0
+      }
+    }
+    .logo-img {
+      width: 100%;
+      border: 1px solid lightgray;
+      border-radius: 100px;
+      padding: 3%;
+    }
+
+    .logo-img:hover {
+      padding: 0%;
+    }
+
+    .owner-img {
+      border-radius: 100px;
+      border: 2px solid;
+      box-shadow: 0px 0px 3px 3px black;
+      width: "25%";
+      max-height: 200px;
+      height: "auto";
+    }
+
+    /* box-shadow: 0px 0px 3px 3px black; */
+    .body-img {
+      width: 100%;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(img/background.png) fixed center;
+      background-size: cover;
+      min-height: 100vh;
+    }
+
+    .bg-trance {
+      background-color: transparent;
+    }
+
+    .main-head-name {
+      font-size: 50pt;
+      font-style: italic;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      display: inline-block;
+    }
+
+    .hover-anim {
+      padding: 0%;
+    }
+
+    .hover-anim:hover {
+      padding: 1%;
+    }
+
+    .contact {
+      margin: 1% 0% 0% 1%;
+      border-radius: 10px;
+    }
+    /* .whatsapp-short{
+      margin:7% 0% 0% 83%;
+      position:fixed;
+      width: 3%;
+    }
+    .top-short{
+      background: transparent;
+      margin:12% 0% 0% 83%;
+      position:fixed;
+      width: 3%;
+    } */
+    .whatsapp-short{
+      margin:40% 0% 0% 78%;
+      position:fixed;
+      width: 12%;
+    }
+    .top-short{
+      background: transparent;
+      margin:55% 0% 0% 79%;
+      position:fixed;
+      width: 10%;
+    }
+  </style>
+</head>
+
+<body class="body-img">
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" id="home">
+    <!-- Avatar image in top left corner -->
+    <!-- <a href="#"><img src="img/logo.webp" class="logo-img "></a> -->
+    <a href="#" class="w3-bar-item w3-button w3-padding w3-hover-blue" style="border-radius:10px;margin-top:5%;">
+      <img src="img/logo.webp" class="logo-img ">
+      <p>HOME</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding w3-hover-blue" style="border-radius:10px;">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>ABOUT</p>
+    </a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-padding w3-hover-blue" style="border-radius:10px;">
+      <i class="fa fa-eye w3-xxlarge"></i>
+      <p>PORTFOLIO</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding w3-hover-blue" style="border-radius:10px;">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>CONTACT</p>
+    </a>
+  </nav>
+
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button" style="width:25% !important">PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center bg-trance" id="home">
+      <h1 class="main-head-name sub"><span>I'm</span> SAJITH</h1>
+      <p>WEB DESIGNER & DEVELOPER.</p>
+      <img src="img/sajith.jpeg" alt="NV SAJITH" class="owner-img">
+    </header>
+
+    <a href="https://wa.me/+919072495440?text=Hi NV SAJITH.." target="_blank"><img src="img/whatsapp.png" alt="whatsapp_icon" class="whatsapp-short"></a>
+    <a href="#"><img src="img/move_top.png" alt="move-top_icon" class="top-short"></a>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+      <h2 class="w3-text-light-grey">Sajith NV</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p>Innovative,task-driven professional with 1+ years of experience in Web Design & Development across diverse industries.
+        Proficient in developing databases,creating user interfaces,writing and testing codes,
+        troubleshooting simple/complex issues,and implementing new features based on user feedback.
+      </p>
+      <h3 class="w3-padding-16 w3-text-light-grey">My Experience</h3>
+      <p class="w3-wide">Web Development</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:95%"><span style="margin-left: 1%;">95%</span></div>
+      </div>
+      <p class="w3-wide">Web Designing</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:85%"><span style="margin-left: 1%;">85%</span></div>
+      </div>
+      <h3 class="w3-padding-16 w3-text-light-grey">Languages & tools</h3>
+      <p class="w3-wide">Python/Django</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:95%"><span style="margin-left: 1%;">95%</span></div>
+      </div>
+      <p class="w3-wide">HTML,CSS,JavaSript</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:92%"><span style="margin-left: 1%;">90%</span></div>
+      </div>
+      <p class="w3-wide">Version Controll System : GIT</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:75%"><span style="margin-left: 1%;">75%</span></div>
+      </div>
+      <p class="w3-wide">Virtual Enviornment</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:88%"><span style="margin-left: 1%;">88%</span></div>
+      </div>
+      <h3 class="w3-padding-16 w3-text-light-grey">Basic Skills in</h3>
+      <p class="w3-wide">JAVA</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:65%"><span style="margin-left: 1%;">65%</span></div>
+      </div>
+      <p class="w3-wide">C#</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:60%"><span style="margin-left: 1%;">60%</span></div>
+      </div>
+      <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+
+        <div class="w3-quarter w3-section" style="color: blue;">
+          <span class="w3-xlarge">8+</span><br>
+          Compleated Projects
+        </div>
+        <div class="w3-quarter w3-section" style="color: blue;">
+          <span class="w3-xlarge">8+</span><br>
+          Happy Clients
+        </div>
+        <div class="w3-quarter w3-section" style="color: blue;">
+          <span class="w3-xlarge">5+</span><br>
+          Meetings
+        </div>
+      </div>
+      <a href="sajith_cv.docx" target="_blank"><button
+          class="w3-button w3-light-grey w3-padding-large w3-section">
+          <i class="fa fa-download"></i> Download Resume
+        </button></a>
+
+      <!-- Grid for pricing tables -->
+      <!-- <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">5GB Storage</li>
+          <li class="w3-padding-16">Mail Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 10</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">50GB Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    </div> -->
+      <!-- End Grid/Pricing tables -->
+
+
+      <!-- Testimonials -->
+      <h3 class="w3-padding-24 w3-text-light-grey">Reputation</h3>
+
+      <a href="https://sajithnv.github.io/WebSolutions/" target="_blank"><img src="img/WebSolutions.png" alt="Avatar"
+          class="w3-left w3-circle w3-margin-right hover-anim" style="width:80px;height: 80px;"></a>
+      <p><span class="w3-large w3-margin-right">WebSolutions.</span> CEO.</p>
+      <p>Freelance Web Designing & Development @WebSolutions.</p><br>
+
+      <h3 class="w3-padding-24 w3-text-light-grey">Qualification</h3>
+      <a href="https://sdc.ac.in/sdit/" target="_blank"><img src="img/sdit.jpg" alt="Avatar"
+          class="w3-left w3-circle w3-margin-right hover-anim" style="width:80px;height: 80px;"></a>
+      <p><span class="w3-large w3-margin-right">MCA</span> @SDIT.</p>
+      <p>@Shree Devi Institute of Technology, Kenjar,Mangalore,Karnataka.</p><br>
+
+      <a href="https://www.livewireindia.com/" target="_blank"><img src="img/lw.jpeg" alt="Avatar"
+          class="w3-left w3-circle w3-margin-right hover-anim" style="width:80px;height: 80px;"></a>
+      <p><span class="w3-large w3-margin-right">Diploma in Python/Django</span> @LiveWire.</p>
+      <p>@Livewire in Kanhangad,Kasaragod,Kerela.</p><br>
+
+      <a href="https://sdc.ac.in/" target="_blank"><img src="img/sdc.jpg" alt="Avatar"
+          class="w3-left w3-circle w3-margin-right hover-anim" style="width:80px;height: 80px;"></a>
+      <p><span class="w3-large w3-margin-right">BCA</span> @SDC.</p>
+      <p>@Shree Devi College, Ballalbagh,Mangalore,Karnataka.</p><br>
+
+      <!-- End About Section -->
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="w3-content" id="portfolio">
+      <h2 class="w3-text-light-grey">Portfolio</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <h3 class="w3-padding-16 w3-text-light-grey">Recent ProJects</h3>
+
+      <!-- Grid for portfolio -->
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half">
+          <a href="" target="_blank">
+            <img src="img/img11.png" class="hover-anim w3-hover-opacity" style="width:100%; border:1px solid #fff;border-radius :20px;max-block-size: 240px;background-color: lightblue;">
+          </a>
+        </div>
+
+        <div class="w3-half">
+          <a href="https://sajithnv.github.io/My_Meal/" target="_blank">
+            <img src="img/img12.png" class="hover-anim w3-hover-opacity"style="width:100%; border:1px solid #fff;border-radius :20px; max-block-size: 240px;background-color: lightblue;">
+          </a>
+        </div>
+        <!-- End photo grid -->
+      </div>
+      <!-- End Portfolio Section -->
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+      <h2 class="w3-text-light-grey">Contact Me</h2>
+      <hr style="width:200px" class="w3-opacity">
+
+      <div class="w3-section">
+        <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Mangalore, India</p>
+        <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 9072495440</p>
+        <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: sajithnv@mail.com
+        </p>
+      </div><br>
+      <p>Let's get in touch.</p>
+      <a href="https://wa.me/+919072495440?text=Hi NV Sajith.. I need a website" target="_blank"><button
+          class="w3-button w3-light-grey w3-padding-xlarge contact" type="submit">
+          <i class="fa fa-whatsapp"></i> SEND MESSAGE
+        </button>
+        <a href="tel:9072495440" target="_blank"><button class="w3-button w3-light-grey w3-padding-xlarge contact"
+            type="submit">
+            <i class="fa fa-phone"></i> MAKE A CALL
+          </button>
+
+          <!-- End Contact Section -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+      <a href="https://www.instagram.com/_sajith_nv_/" target="_blank"><i
+          class="fa fa-instagram w3-hover-opacity w3-black"></i></a>
+      <a href="tel:9072495440" target="_blank"><i
+          class="fa fa-phone w3-hover-opacity w3-black"></i></a>
+      <a href="https://wa.me/+919072495440?text=Hi NV SAJITH.." target="_blank"><i
+          class="fa fa-whatsapp w3-hover-opacity w3-black "></i></a>
+      <!-- <a href=""><i class="fa fa-linkedin w3-hover-opacity w3-black" target="_blank"><i
+      class="fa fa-whatsapp w3-hover-opacity w3-black "></i></a> -->
+      <p class="w3-medium">Powered by<a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+          style="text-decoration: none;"> w3Layouts.css</a>
+        & <a href="#" class="w3-text-blue w3-hover-text-green">@Sajith_NV</a></p>
+      <!-- End footer -->
+    </footer>
+
+    <!-- END PAGE CONTENT -->
+  </div>
+
+</body>
+
+</html>
