@@ -47,9 +47,17 @@
     }
 
     /* Remove margins from "page content" on small screens */
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 500px) {
       #main {
         margin-left: 0
+      }
+      .whatsapp-short , .top-short{
+        display: block;
+      }
+    }
+    @media only screen and (min-width: 500px) {
+      .whatsapp-short , .top-short{
+        display: none;
       }
     }
     .logo-img {
@@ -103,23 +111,14 @@
       margin: 1% 0% 0% 1%;
       border-radius: 10px;
     }
-    /* .whatsapp-short{
-      margin:7% 0% 0% 83%;
-      position:fixed;
-      width: 3%;
-    }
-    .top-short{
-      background: transparent;
-      margin:12% 0% 0% 83%;
-      position:fixed;
-      width: 3%;
-    } */
     .whatsapp-short{
+      top:79vh;
       margin:5% 0% 0% 78%;
       position:fixed;
       width: 12%;
     }
     .top-short{
+      top:80vh;
       background: transparent;
       margin:20% 0% 0% 79%;
       position:fixed;
@@ -171,8 +170,8 @@
       <img src="img/sajith.jpeg" alt="NV SAJITH" class="owner-img">
     </header>
 
-    <a href="https://wa.me/+919072495440?text=Hi NV SAJITH.." target="_blank"><img src="img/whatsapp.png" alt="whatsapp_icon" class="whatsapp-short"></a>
-    <a href="#"><img src="img/move_top.png" alt="move-top_icon" class="top-short"></a>
+    <a href="https://wa.me/+919072495440?text=Hi NV SAJITH.." target="_blank"><img src="img/whatsapp.png" alt="whatsapp_icon" class="whatsapp-short" ></a>
+    <a href="#"><img src="img/move_top.png" alt="move-top_icon" class="top-short" ></a>
 
     <!-- About Section -->
     <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
