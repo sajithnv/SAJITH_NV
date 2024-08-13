@@ -10,121 +10,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p {
-      font-family: 'Times New Roman', Times, serif;
-      color: #fff;
-    }
-
-    p {
-      font-size: large;
-    }
-
-    .w3-row-padding img {
-      margin-bottom: 12px
-    }
-
-    /* Set the width of the sidebar to 120px */
-    .w3-sidebar {
-      width: 120px;
-      background: rgb(15, 12, 12);
-    }
-
-    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-    #main {
-      margin-left: 120px
-    }
-
-    /* Remove margins from "page content" on small screens */
-    @media only screen and (max-width: 500px) {
-      #main {
-        margin-left: 0
-      }
-      .whatsapp-short , .top-short{
-        display: block;
-      }
-    }
-    @media only screen and (min-width: 500px) {
-      .whatsapp-short , .top-short{
-        display: none;
-      }
-    }
-    .logo-img {
-      width: 100%;
-      border: 1px solid lightgray;
-      border-radius: 100px;
-      padding: 3%;
-    }
-
-    .logo-img:hover {
-      padding: 0%;
-    }
-
-    .owner-img {
-      border-radius: 100px;
-      border: 2px solid;
-      box-shadow: 0px 0px 3px 3px black;
-      width: "25%";
-      max-height: 200px;
-      height: "auto";
-    }
-
-    /* box-shadow: 0px 0px 3px 3px black; */
-    .body-img {
-      width: 100%;
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(img/background.png) fixed center;
-      background-size: cover;
-      min-height: 100vh;
-    }
-
-    .bg-trance {
-      background-color: transparent;
-    }
-
-    .main-head-name {
-      font-size: 50pt;
-      font-style: italic;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      display: inline-block;
-    }
-
-    .hover-anim {
-      padding: 0%;
-    }
-
-    .hover-anim:hover {
-      padding: 1%;
-    }
-
-    .contact {
-      margin: 1% 0% 0% 1%;
-      border-radius: 10px;
-    }
-    .whatsapp-short{
-      bottom: 15vh;
-      margin:5% 0% 0% 78%;
-      position:fixed;
-      width: 12%;
-    }
-    .top-short{
-      bottom: 8vh;
-      background: transparent;
-      margin:20% 0% 0% 79%;
-      position:fixed;
-      width: 10%;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="body-img">
@@ -183,9 +69,9 @@
       <h3 class="w3-padding-16 w3-text-light-grey">My Experience</h3>
 
       <p class="w3-wide" style="margin-bottom: 0%;" >Angular</p>
-      <p style="font-size: small;margin-top: 0%;">6 Months  from WIZLITE Innovtion Center</p>
+      <p style="font-size: small;margin-top: 1%;">6 Months  from WIZLITE Innovtion Center</p>
       <p class="w3-wide" style="margin-bottom: 0%;" >DotNet Web API</p>
-      <p style="font-size: small;margin-top: 0%;">6 Months  from WIZLITE Innovtion Center</p>
+      <p style="font-size: small;margin-top: 1%;">6 Months  from WIZLITE Innovtion Center</p>
 
       <h3 class="w3-padding-16 w3-text-light-grey">Languages & tools</h3>
       <p class="w3-wide">Python/Django</p>
@@ -278,7 +164,7 @@
           Meetings
         </div>
       </div> -->
-      <a href="Sajith Nv ( CV ) - SC.pdf" target="_blank"><button
+      <a href="Sajith Nv ( CV ).pdf" target="_blank"><button
           class="w3-button w3-light-grey w3-padding-large w3-section">
           <i class="fa fa-eye"></i> View Resume
         </button></a>
@@ -314,22 +200,31 @@
     <div class="w3-content" id="portfolio">
       <h2 class="w3-text-light-grey">Portfolio</h2>
       <hr style="width:200px" class="w3-opacity">
-      <h3 class="w3-padding-16 w3-text-light-grey">Personal ProJects (samples)</h3>
+      <h3 class="w3-padding-16 w3-text-light-grey">Personal ProJects</h3>
 
       <!-- Grid for portfolio -->
       <div class="w3-row-padding" style="margin:0 -16px">
         <div class="w3-half">
-          <a href="#">
-            <img src="img/img11.png" class="hover-anim w3-hover-opacity" style="width:100%; border:1px solid #fff;border-radius :20px;max-block-size: 240px;background-color: lightblue;">
-          </a>
+          <div class="image-container">
+            <!-- <a href="img/img11.png" target="_blank"> -->
+              <img src="img/img11.png" class="hover-anim w3-hover-opacity" style="width:100%; border:1px solid #fff;border-radius:20px; max-block-size: 240px; background-color: lightblue;">
+              <div class="overlay">
+                <a class="view-btn" href="https://github.com/sajithnv/FindMyTradie" target="_blank">View Code</a>
+              </div>
+            <!-- </a> -->
+          </div>
         </div>
-
+      
         <div class="w3-half">
-          <a href="https://sajithnv.github.io/My_Meal" target="_blank">
-            <img src="img/img12.png" class="hover-anim w3-hover-opacity"style="width:100%; border:1px solid #fff;border-radius :20px; max-block-size: 240px;background-color: lightblue;">
-          </a>
+          <div class="image-container">
+            <!-- <a href="img/img12.png" target="_blank"> -->
+              <img src="img/img12.png" class="hover-anim w3-hover-opacity" style="width:100%; border:1px solid #fff;border-radius:20px; max-block-size: 240px; background-color: lightblue;">
+              <div class="overlay">
+                <a class="view-btn" href="https://github.com/sajithnv/My_Meal" target="_blank">View Code</a>
+              </div>
+            <!-- </a> -->
+          </div>
         </div>
-        <!-- End photo grid -->
       </div>
       <!-- End Portfolio Section -->
     </div>

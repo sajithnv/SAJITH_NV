@@ -1,0 +1,158 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+  }
+
+  p {
+    font-size: large;
+  }
+
+  .w3-row-padding img {
+    margin-bottom: 12px
+  }
+
+  /* Set the width of the sidebar to 120px */
+  .w3-sidebar {
+    width: 120px;
+    background: rgb(15, 12, 12);
+  }
+
+  /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+  #main {
+    margin-left: 120px
+  }
+
+  /* Remove margins from "page content" on small screens */
+  @media only screen and (max-width: 500px) {
+    #main {
+      margin-left: 0
+    }
+    .whatsapp-short , .top-short{
+      display: block;
+    }
+  }
+  @media only screen and (min-width: 500px) {
+    .whatsapp-short , .top-short{
+      display: none;
+    }
+  }
+  .logo-img {
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 100px;
+    padding: 3%;
+  }
+
+  .logo-img:hover {
+    padding: 0%;
+  }
+
+  .owner-img {
+    border-radius: 100px;
+    border: 2px solid;
+    box-shadow: 0px 0px 3px 3px black;
+    width: "25%";
+    max-height: 200px;
+    height: "auto";
+  }
+
+  /* box-shadow: 0px 0px 3px 3px black; */
+  .body-img {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(img/background.png) fixed center;
+    background-size: cover;
+    min-height: 100vh;
+  }
+
+  .bg-trance {
+    background-color: transparent;
+  }
+
+  .main-head-name {
+    font-size: 50pt;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: inline-block;
+  }
+
+  .hover-anim {
+    padding: 0%;
+  }
+
+  .hover-anim:hover {
+    padding: 1%;
+  }
+
+  .contact {
+    margin: 1% 0% 0% 1%;
+    border-radius: 10px;
+  }
+  .whatsapp-short{
+    bottom: 15vh;
+    margin:5% 0% 0% 78%;
+    position:fixed;
+    width: 12%;
+  }
+  .top-short{
+    bottom: 8vh;
+    background: transparent;
+    margin:20% 0% 0% 79%;
+    position:fixed;
+    width: 10%;
+  }
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .view-btn {
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #655f5f;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-btn:hover {
+    background-color: #3d3838;
+  }
