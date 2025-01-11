@@ -156,3 +156,6 @@ html {
   .view-btn:hover {
     background-color: #3d3838;
   }
+  li{
+    color:white;
+  }
